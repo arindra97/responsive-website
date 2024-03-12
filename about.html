@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/c16e739af4.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <title>About Me | Knowledge Resume</title>
+</head>
+<body>
+    <div class="menu-wrap">
+        <input type="checkbox" class="toggler">
+        <div class="hamburger"><div></div></div>
+        <div class="menu">
+            <div>
+                <div>
+                    <ul>
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/about.html">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header id="showcase">
+        <div class="container showcase-container">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab aliquid impedit perspiciatis doloribus! Vero officia nam temporibus eum in.</p>
+            <a href="#about" class="btn">Read More</a>
+        </div>
+    </header>
+
+    <section id="about">
+        <div class="container">
+            <h1><i class="fas fa-brain"></i> Knowledge Resume</h1>
+            <h3><i class="fas fa-user"></i> Muhammad Arindra Khoiru Syawal</h3>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <ul>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2019: HTML & CSS</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2019: JavaScript</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2020: Python & Django Framework</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2021: UI & UX Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2021: PHP & Laravel</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2022: Data Analyst</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2022: React</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2022: Data Engineer</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <h3><i class="fas fa-chevron-right"></i> 2023: Odoo</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro cupiditate sequi eos vero ut necessitatibus beatae non dolor, veritatis libero.</p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script>
+        // Smooth Scrolling JQuery
+        $('.btn').on('click', function(event){
+        if (this.hash !== '') {
+            event.preventDefault();
+
+            const hash = this.hash;
+
+            $('html, body').animate(
+            {
+                scrollTop: $(hash).offset().top
+            },
+            800
+            );
+        }
+        })
+    </script>
+</body>
+</html>
